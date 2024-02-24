@@ -31,6 +31,6 @@ sudo service apache2 restart
 
 # Check Apache status
 echo "Checking Apache status..."
-sudo service apache2 status
+touch emp_crud/wsgi.py 
 
 echo "Deployment Finished!"
