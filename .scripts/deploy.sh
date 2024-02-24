@@ -26,8 +26,8 @@ deactivate
 echo "Virtual env 'env' Deactivated !"
 
 # Reloading Application So New Changes could reflect on website
-pushd miniblog
-touch wsgi.py
-popd
+sudo service apache2 restart
+# touch wsgi.py
+# popd
 
 echo "Deployment Finished!"
