@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+  </head>
+  <body>
+    <table border="2">
+      <thead>
+        <th>S.No</th>
+        <th>Name</th>
+        <th>Salary</th>
+      </thead>
+      <tbody>
+        {%for obj in emp%}
+        <tr>
+          <td>{{forloop.counter}}.</td>
+          <td>{{obj.name}}</td>
+          <td>{{obj.salary}}</td>
+        </tr>
+        {%endfor%}
+      </tbody>
+    </table>
+  </body>
+</html>
