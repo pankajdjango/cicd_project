@@ -15,8 +15,6 @@ echo "Installing Dependencies..."
 pip install -r requirements.txt --no-input
 
 echo "Serving Static Files..."
-ls -ltr
-whereis python3
 python manage.py collectstatic --noinput
 
 echo "Running Database migration"
@@ -27,9 +25,12 @@ python manage.py migrate
 deactivate
 echo "Virtual env 'env' Deactivated !"
 
-# Reloading Application So New Changes could reflect on website
+# Restart Apache (if using Apache)
+echo "Restarting Apache..."
 sudo service apache2 restart
-# touch wsgi.py
-# popd
+
+# Check Apache status
+echo "Checking Apache status..."
+sudo service apache2 status
 
 echo "Deployment Finished!"
