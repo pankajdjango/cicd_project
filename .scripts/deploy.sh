@@ -27,7 +27,6 @@ echo "Virtual env 'env' Deactivated !"
 
 # Restart Apache (if using Apache)
 echo "Restarting Apache..."
-# sudo service apache2 restart
 touch emp_crud/wsgi.py
 
 # Check Apache status
