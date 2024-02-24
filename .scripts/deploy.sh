@@ -27,10 +27,11 @@ echo "Virtual env 'env' Deactivated !"
 
 # Restart Apache (if using Apache)
 echo "Restarting Apache..."
-sudo service apache2 restart
+# sudo service apache2 restart
+touch emp_crud/wsgi.py
 
 # Check Apache status
-echo "Checking Apache status..."
-touch emp_crud/wsgi.py 
+# echo "Checking Apache status..."
+# touch emp_crud/wsgi.py
 
 echo "Deployment Finished!"
